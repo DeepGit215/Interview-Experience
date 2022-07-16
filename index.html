@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Filtering System</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://kit.fontawesome.com/9f767eca8f.js" crossorigin="anonymous"></script>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <header>
+          
+        </header>
+        <div class="container">
+            <div class="container__header">
+                <img src="images/techno-logo.jpg" id="logo" alt="JS logo">
+                <div class="container__title">
+                    <h1>Interview Experience</name></h1>
+                </div>
+            </div>
+            <div class="container__Company-system">
+                <nav>
+                    <li data-nav-list class="active">All Company</li>
+                    <li data-nav-list>4-5Lpa</li>
+                    <li data-nav-list>5-7Lpa</li>
+                    <li data-nav-list>8-10Lpa</li>
+                    <li data-nav-list>10-15Lpa</li>
+                    <li data-nav-list>Dream Company</li>
+                </nav>
+                <div class="Company-system__Company-list">
+                    <button class="Company-list__add-Company">
+                        <i class="fas fa-video"></i> Add Interview Experience
+                    </button>
+                    <div class="Company-list__empty-item">
+                        <i class="fas fa-plus fa-7x"></i><br><br>
+                        Click the 'Add ' button to enter an entry
+                    </div>
+                </div>
+                <div class="Company__modal-box">
+                    <div class="Company__modal-content">
+                        <div class="Company__modal-header">
+                            Enter Company credentials
+                            <div class="close">&times</div>
+                        </div>
+                        <div class="Company__add-Company">
+                            <div class="add-Company__genre-image"></div>  
+                            <div class="add-Company__input-form">
+                                <label for="Company-name">Enter name</label><br>
+                                <input name="name" type="text" id="Company-name" placeholder="Name of Company" required><br>
+
+                                <label for="Company-genre">Choose Category</label><br>
+                                <select name="genre" id="Company-genre">
+                                    <option value="None">--Select a Category--</option>
+                                    <option value="4-5Lpa">4-5Lpa</option>
+                                    <option value="5-7Lpa">5-7Lpa</option>
+                                    <option value="8-10Lpa">8-10Lpa</option>
+                                    <option value="10-15Lpa">10-15Lpa</option>
+                                    <option value="Dream Company">Dream Company</option>
+                                </select><br>
+
+                                <label for="Company-rating">Rate Your Experience</label><br>
+                                <select name="rating" id="Company-rating">
+                                    <option value="None">--Choose rating--</option>
+                                    <option value="Below Average">below Average</option>
+                                    <option value="Average">Average</option>
+                                    <option value="Good">Good</option>
+
+                                </select><br>
+                                <label for="Company-status">Status</label><br>
+                                <select name="status" id="Company-status">
+                                    <option value="None">--Choose </option>
+                                    <option value="Placed">placed</option>
+                                    <option value="Not Placed">Not Placed</option>
+
+                                </select><br>
+                                
+
+                                <label for="Company-description">Enter description</label><br>
+                                <textarea name="description" id="Company-description" placeholder="Description or summary of the Company"></textarea><br>
+
+                                <input type="submit" id="add-Company" value="Add Company">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
